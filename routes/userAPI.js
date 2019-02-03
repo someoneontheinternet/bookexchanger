@@ -16,7 +16,7 @@ router.post('/login',
     successRedirect:  '/',
     failureRedirect:  '/user/login',
     failureFlash:     false
-   }
+  }
 ));
 
 router.get('/logout', function(req, res){
@@ -121,6 +121,11 @@ router.get('/:username', function(req, res) {
       res.json(userObj);
     }
   });
+
+});
+
+// TODO: User Query
+router.post('/query', function(req, res) {
 
 });
 
